@@ -1,0 +1,18 @@
+<h1>
+  <%= @director.name %>
+</h1>
+
+<dl>
+  <dt>Date of Birth:</dt>
+  <dd><%= @director.dob %></dd>
+
+  <dt>Biography</dt>
+  <dd><%= @director.bio %></dd>
+
+  <dt>Image URL</dt>
+  <dd>
+    <img src="<%= @director.image_url %>">
+  </dd>
+</dl>
+
+<a href="http://localhost:3000/delete_director/<%= @director.id %>">Delete this director</a>
